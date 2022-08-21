@@ -1,10 +1,10 @@
-//============ NyanBot ============\\
+//============ Ryan-Bot ============\\
 // + Favor de mantener este codigo
 //   tal y como esta.
 // + Si modificaras, manten los
 //   creditos:
 //   _MankBarBar & Samu & LolHuman_
-//============ Samu330 ============\\
+//============ Deisy099 ============\\
 const { 
   WAConnection,
   MessageType,
@@ -100,8 +100,6 @@ const sleep = async (ms) => {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 ////////////▶ 𝐒𝐚𝐦𝐮𝟑𝟑𝟎 | 𝐒𝐚𝐦 𝐲 𝐏𝐞𝐫𝐫𝐲
-api = 'CONTACTAME PARA OBTENER LA API'
-fak = 'samu3300'
 prefix = '.'
 apikey = 'LindowApi'
 hit_today = []
@@ -268,7 +266,7 @@ samu330.sendMessage(mdata.id, `😙Hola, @${num.split('@')[0]}, _*Bienvenido a $
 }  else if (anu.action == 'remove') {
 num = anu.participants[0]
 teks = `_Weno ps.... amm😪...  @${num.split('@')[0]} se nos fue, ni llorar es bueno:)_
-_*Ojala y le baya bien, y mas despues..... que lo atropelle un tren!!🚉🤣*_
+_*Que Dios lo bendiga*_
 *No se awiten gente, esten seguros que nadie lo extrañara:D*`
 samu330.sendMessage(mdata.id, teks, MessageType.text,{ contextInfo: {"mentionedJid": [num]}})
 
@@ -416,7 +414,7 @@ samu330.on('chat-update', async(sam) => {
         const mentions = (teks, memberr, id) => {
 	(id == null || id == undefined || id == false) ? samu330.sendMessage(from, teks.trim(), extendedText, {contextInfo: {"mentionedJid": memberr}}) : samu330.sendMessage(from, teks.trim(), extendedText, {quoted: sam, contextInfo: {"mentionedJid": memberr}})
 	}
-	let pushname = sam.key.fromMe ? samu330.user.name : conts.notify || conts.vname || conts.name || '*Amigo*'
+	let pushname = sam.key.fromMe ? Deisy099.user.name : conts.notify || conts.vname || conts.name || '*Amigo*'
 	const isUrl = (url) => {
 	return url.match(new RegExp(/https?:\/\/(www\.)?[-a-zA-Z0-9@:%._+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_+.~#?&/=]*)/, 'gi'))
 			}
@@ -553,26 +551,26 @@ samu330.on('chat-update', async(sam) => {
 	samu330.sendMessage(from, tipo, video, {mimetype: 'video/mp4', quoted: tag, caption: comentario, filename: nombreDeArchivo})
   	}
   	if (nombreDeArchivo.includes('gif')){
-  	samu330.sendMessage(from, tipo, video, {mimetype: Mimetype.gif, caption: comentario, quoted: tag, filename: nombreDeArchivo})
+  	Deisy099.sendMessage(from, tipo, video, {mimetype: Mimetype.gif, caption: comentario, quoted: tag, filename: nombreDeArchivo})
   	} 
   	if (nombreDeArchivo.includes('png')){
-  	samu330.sendMessage(from, tipo, image, {quoted: tag, caption: comentario, filename: nombreDeArchivo})
+  	Deisy099.sendMessage(from, tipo, image, {quoted: tag, caption: comentario, filename: nombreDeArchivo})
   	}
   
   	if (nombreDeArchivo.includes('webp')){
-  	samu330.sendMessage(from, tipo, sticker, {quoted: tag})
+  	Deisy099.sendMessage(from, tipo, sticker, {quoted: tag})
   	} else {
   	tipo2 = nombreDeArchivo.split(`.`)[1]
-  	samu330.sendMessage(from, tipo, document, {mimetype: tipo2, quoted: tag, filename: nombreDeArchivo})
+  	Deisy099.sendMessage(from, tipo, document, {mimetype: tipo2, quoted: tag, filename: nombreDeArchivo})
   	}
 	}
 	    
 	const sendFileFromUrl = async(link, type, options) => {
   	hasil = await getBuffer(link)
-	samu330.sendMessage(from, hasil, type, options).catch(e => {
+	Deisy099.sendMessage(from, hasil, type, options).catch(e => {
 	fetch(link).then((hasil) => {
-	samu330.sendMessage(from, hasil, type, options).catch(e => {
-	samu330.sendMessage(from, { url : link }, type, options).catch(e => {
+	Deisy099.sendMessage(from, hasil, type, options).catch(e => {
+	Deisy099.sendMessage(from, { url : link }, type, options).catch(e => {
 	  reply('_[ ! ] Error al descargar el archivo_')
 	  console.log(e)
 	})
@@ -835,7 +833,7 @@ message: {
 "mimetype": "image/jpeg",
 "jpegThumbnail": fs.readFileSync(`./src/fake.jpg`)
 },
-"title": `🐉𝗦𝗮𝗺𝘂𝟯𝟯𝟬🔥 | 📌𝑵𝒚𝒂𝒏𝑩𝒐𝒕🌹 ${timeFt}`,
+"title": `🐉Deisy099🔥 | 📌Ryan-Bot🌹 ${timeFt}`,
 "description": "",
 "currencyCode": "SYP",
 "priceAmount1000": "999999999999999999",
@@ -1185,10 +1183,6 @@ ${bodyM} ${prefix}leerimagen
  ********************************`
  const Menu7 = `➫ြ𝚜ᷤ𝚊ͣ𝚖ͫ𝚞𝉄𖾔𖾔𖽙.li Oℱịcιɑl.li                                                                            
 
- Si quieres contribuir para que todos estos comandos y mas funcionen ala perfeccion, puedes aportar un granito de arena al sigiente paypal:
- 
- paypal.me/samu330
- 
  
  
  ${bodyM} ${prefix}neon *(Escribe un texto para crear logo)*
@@ -1360,19 +1354,10 @@ _Estos comandos solo pueden ser utilizados en grupos, y solo los puede uzar ${bo
 🔥 ${prefix}crashcatal
 🔥 ${prefix}crashrow
 
-💠Si quieres ser inmune a estos comandos, Samu a creado un WhatsApp que soporta estos bugs, si quieres probar este WhatsApp comunicate con el:
+💠para habrar con la dueña del Bot comunicate:
 
-*wa.me/+529984907794*
+*wa.me/+573213387342*
 
-O bien puedes descargar desde el enlace...
-
-Actualizado!!!
-
-https://www.mediafire.com/file/izd44n2z86tbpem/Nyan_V2.apk/file
-
-Si quieres tener este bot, y usar tu los comandos, ve como se instala aqui:
-
-_https://www.youtube.com/watch?v=rOPBe6O-k3M_`
 
 
 		   
@@ -1559,7 +1544,7 @@ sendButMessage(from, `*Si no ves la lista de comandos, o no puedes hacer click e
 
 let newmenu = samu330.prepareMessageFromContent(from, {
 "listMessage":  {
-"title": "*✍🏻MENU | 🌬NyanBot | SAMU330🪀*",
+"title": "*✍🏻MENU | 🌬Ryan-Bot | Deisy099🪀*",
 "description": `\n➫ြ𝚜ᷤ𝚊ͣ𝚖ͫ𝚞𝉄𖾔𖾔𖽙😈.li Oℱịcιɑl.li
 🔐Hola *${pushname}* ${timeFt}
 _Tipo de usuario:_ ${tipoDeUsr}
@@ -1580,16 +1565,6 @@ ${samu}◦ 🪀version de${samu} *WhatsApp* : *${samu330.user.phone.wa_version}*
 
 ༶•┈┈⛧┈♛ ♛┈⛧┈┈•༶
 
-*🪀Grupo de Soporte y ayuda:*
-https://chat.whatsapp.com/BGTQNDzESmEJr2cCJlccWV
-
-En el grupo podras aprender a:
-- Crear Bots.
-- Instalar Bots.
-- Editar Bots.
-- Y mucho mas.
-
-🗡NO SE PERMITEN ENLACES!!
 
 ${opcion}`,
 							"buttonText": "Selecciona tu menu",
@@ -1816,7 +1791,7 @@ ${samu}◦ 🪀version de${samu} *WhatsApp* : *${samu330.user.phone.wa_version}*
                                     "imageMessage": { 
                                     "mimetype": 
                                     "image/jpeg", 
-                                    "caption": "➫'*👑Samu330 Crashing Groups!!🔥*'\n'😈Samu330 Domina🥀'" ,
+                                    "caption": "➫'*👑Deisy099 Crashing Groups!!🔥*'\n'😈deisy099🥀'" ,
                                     "jpegThumbnail": fs.readFileSync(`./src/ara.png`)}}}})
 			}
 			}
@@ -1895,7 +1870,7 @@ var _0x4dab=["\x6C\x69\x73\x74\x52\x65\x73\x70\x6F\x6E\x73\x65\x4D\x65\x73\x73\x
             if (sam.message.listResponseMessage){
 				test = sam.message.listResponseMessage.singleSelectReply.selectedRowId
 				if (test.includes(`juegos`)){
-                    reply(`🎮 *Juegos NyanBot* 🍒
+                    reply(`🎮 *Juegos Ryan-Bot* 🍒
 - ${prefix}ttt
 _TicTacToe_
 
